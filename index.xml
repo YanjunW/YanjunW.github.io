@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yanjun Wang on Yanjun Wang</title>
+    <link>https://YanjunW.github.io/</link>
+    <description>Recent content in Yanjun Wang on Yanjun Wang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Feb 2019 00:44:57 -0500</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Decidable Dryad</title>
+      <link>https://YanjunW.github.io/project/decidable-dryad/</link>
+      <pubDate>Thu, 14 Feb 2019 00:44:57 -0500</pubDate>
+      
+      <guid>https://YanjunW.github.io/project/decidable-dryad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reasoning About Recursive Tree Traversals</title>
+      <link>https://YanjunW.github.io/publication/reasoning-about-recursive-tree-traversals/</link>
+      <pubDate>Thu, 14 Feb 2019 00:32:12 -0500</pubDate>
+      
+      <guid>https://YanjunW.github.io/publication/reasoning-about-recursive-tree-traversals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DryadSynth</title>
+      <link>https://YanjunW.github.io/project/dryadsynth/</link>
+      <pubDate>Thu, 14 Feb 2019 00:26:23 -0500</pubDate>
+      
+      <guid>https://YanjunW.github.io/project/dryadsynth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Syntax-Guided Gradual Synthesis</title>
+      <link>https://YanjunW.github.io/publication/gradual-synthesis/</link>
+      <pubDate>Wed, 13 Feb 2019 00:46:47 -0500</pubDate>
+      
+      <guid>https://YanjunW.github.io/publication/gradual-synthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Decidable Logic for Tree Data-Structures with Measurements</title>
+      <link>https://YanjunW.github.io/publication/decidable-dryad/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://YanjunW.github.io/publication/decidable-dryad/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
