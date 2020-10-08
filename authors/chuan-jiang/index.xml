@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chuan Jiang on Yanjun Wang</title>
+    <link>https://YanjunW.github.io/authors/chuan-jiang/</link>
+    <description>Recent content in Chuan Jiang on Yanjun Wang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Nov 2019 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://YanjunW.github.io/authors/chuan-jiang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Network Design Objectives Using A Program Synthesis Approach</title>
+      <link>https://YanjunW.github.io/publication/hotnets/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://YanjunW.github.io/publication/hotnets/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

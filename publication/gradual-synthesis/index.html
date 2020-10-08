@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Syntax-guided synthesis aims to find a program satisfying semantic specification as well as user-provided structural hypotheses. There are two main search strategies: concrete search, which systematically or stochastically enumerates all possible solutions, and symbolic search, which leverages a symbolic procedure to solve the synthesis problem. In this paper, we propose a gradual synthesis framework, a novel combination of the two strategies that combines the best of the two worlds. The framework is a synergy of three key ideas: height-based enumeration (solving the synthesis problem at every height symbolically); grammar extension (sim- plifying the synthesis problem using the failed candidate); and pure symbolic synthesis (ad hoc, decidable synthesis procedures for special classes of problems). We prototyped the gradual synthesis framework and evaluated it on a wide range of benchmarks. Experiments show that the new synthesis framework can solve many challenging synthesis problems not possible before.">
+  <meta name="description" content="Syntax-guided synthesis (SyGuS) aims to find a program satisfying semantic specification as well as user-provided structural hypotheses. There are two main synthesis approaches: enumerative synthesis, which repeatedly enumerates possible candidate programs and checks their correctness, and deductive synthesis, which leverages a symbolic procedure to construct implementations from specifications. Neither approach is strictly better than the other: automated deductive synthesis is usually very efficient but only works for special grammars or applications; enumerative synthesis is very generally applicable but limited in scalability. In this paper, we propose a cooperative synthesis technique for SyGuS problems with the conditional linear integer arithmetic (CLIA) background theory, as a novel integration of the two approaches, combining the best of the two worlds. The technique exploits several novel divide-and-conquer strategies to split a large synthesis problem to smaller subproblems. The subproblems are solved separately and their solutions are combined to form a final solution. The technique integrates two synthesis engines: a pure deductive component that can efficiently solve some problems, and a height-based enumeration algorithm that can handle arbitrary grammar. We implemented the cooperative synthesis technique, and evaluated it on a wide range of benchmarks. Experiments showed that our technique can solve many challenging synthesis problems not possible before, and tends to be more scalable than state-of-the-art synthesis algorithms.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://YanjunW.github.io/publication/gradual-synthesis/">
@@ -118,20 +118,20 @@
   
   <meta property="og:site_name" content="Yanjun Wang">
   <meta property="og:url" content="https://YanjunW.github.io/publication/gradual-synthesis/">
-  <meta property="og:title" content="Syntax-Guided Gradual Synthesis | Yanjun Wang">
-  <meta property="og:description" content="Syntax-guided synthesis aims to find a program satisfying semantic specification as well as user-provided structural hypotheses. There are two main search strategies: concrete search, which systematically or stochastically enumerates all possible solutions, and symbolic search, which leverages a symbolic procedure to solve the synthesis problem. In this paper, we propose a gradual synthesis framework, a novel combination of the two strategies that combines the best of the two worlds. The framework is a synergy of three key ideas: height-based enumeration (solving the synthesis problem at every height symbolically); grammar extension (sim- plifying the synthesis problem using the failed candidate); and pure symbolic synthesis (ad hoc, decidable synthesis procedures for special classes of problems). We prototyped the gradual synthesis framework and evaluated it on a wide range of benchmarks. Experiments show that the new synthesis framework can solve many challenging synthesis problems not possible before."><meta property="og:image" content="https://YanjunW.github.io/img/icon-192.png">
+  <meta property="og:title" content="Reconciling enumerative and deductive program synthesis | Yanjun Wang">
+  <meta property="og:description" content="Syntax-guided synthesis (SyGuS) aims to find a program satisfying semantic specification as well as user-provided structural hypotheses. There are two main synthesis approaches: enumerative synthesis, which repeatedly enumerates possible candidate programs and checks their correctness, and deductive synthesis, which leverages a symbolic procedure to construct implementations from specifications. Neither approach is strictly better than the other: automated deductive synthesis is usually very efficient but only works for special grammars or applications; enumerative synthesis is very generally applicable but limited in scalability. In this paper, we propose a cooperative synthesis technique for SyGuS problems with the conditional linear integer arithmetic (CLIA) background theory, as a novel integration of the two approaches, combining the best of the two worlds. The technique exploits several novel divide-and-conquer strategies to split a large synthesis problem to smaller subproblems. The subproblems are solved separately and their solutions are combined to form a final solution. The technique integrates two synthesis engines: a pure deductive component that can efficiently solve some problems, and a height-based enumeration algorithm that can handle arbitrary grammar. We implemented the cooperative synthesis technique, and evaluated it on a wide range of benchmarks. Experiments showed that our technique can solve many challenging synthesis problems not possible before, and tends to be more scalable than state-of-the-art synthesis algorithms."><meta property="og:image" content="https://YanjunW.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-02-13T00:46:47-05:00">
+  <meta property="article:published_time" content="2020-06-19T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2019-02-14T03:15:02-05:00">
-  
-
+  <meta property="article:modified_time" content="2020-10-07T23:56:05-04:00">
   
 
   
 
-  <title>Syntax-Guided Gradual Synthesis | Yanjun Wang</title>
+  
+
+  <title>Reconciling enumerative and deductive program synthesis | Yanjun Wang</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -233,9 +233,9 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#projects">
+          <a class="nav-link" href="/#experience">
             
-            <span>Projects</span>
+            <span>Experience</span>
             
           </a>
         </li>
@@ -274,6 +274,25 @@
           <a class="nav-link" href="/#contact">
             
             <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf">
+            
+            <span>CV</span>
             
           </a>
         </li>
@@ -322,7 +341,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Syntax-Guided Gradual Synthesis</h1>
+  <h1 itemprop="name">Reconciling enumerative and deductive program synthesis</h1>
 
   
 
@@ -331,8 +350,8 @@
 
 
 
-<meta content="2019-02-13 00:46:47 -0500 EST" itemprop="datePublished">
-<meta content="2019-02-14 03:15:02 -0500 EST" itemprop="dateModified">
+<meta content="2020-06-19 00:00:00 -0400 EDT" itemprop="datePublished">
+<meta content="2020-10-07 23:56:05 -0400 EDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -387,7 +406,7 @@
     
       
     
-    <time>February 2019</time>
+    <time>June 2020</time>
   </span>
   
 
@@ -424,6 +443,57 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="/publication/gradual-synthesis/pldi2020.ppsx" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/purdue-cap/DryadSynth" target="_blank" rel="noopener">
+  Source Document
+</a>
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/https://doi.org/10.1145/3385412.3386027" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+</div>
+
 
   
 </div>
@@ -434,7 +504,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Syntax-guided synthesis aims to find a program satisfying semantic specification as well as user-provided structural hypotheses. There are two main search strategies: concrete search, which systematically or stochastically enumerates all possible solutions, and symbolic search, which leverages a symbolic procedure to solve the synthesis problem. In this paper, we propose a gradual synthesis framework, a novel combination of the two strategies that combines the best of the two worlds. The framework is a synergy of three key ideas: height-based enumeration (solving the synthesis problem at every height symbolically); grammar extension (sim- plifying the synthesis problem using the failed candidate); and pure symbolic synthesis (ad hoc, decidable synthesis procedures for special classes of problems). We prototyped the gradual synthesis framework and evaluated it on a wide range of benchmarks. Experiments show that the new synthesis framework can solve many challenging synthesis problems not possible before.</p>
+    <p class="pub-abstract" itemprop="text">Syntax-guided synthesis (SyGuS) aims to find a program satisfying semantic specification as well as user-provided structural hypotheses. There are two main synthesis approaches: enumerative synthesis, which repeatedly enumerates possible candidate programs and checks their correctness, and deductive synthesis, which leverages a symbolic procedure to construct implementations from specifications. Neither approach is strictly better than the other: automated deductive synthesis is usually very efficient but only works for special grammars or applications; enumerative synthesis is very generally applicable but limited in scalability. In this paper, we propose a cooperative synthesis technique for SyGuS problems with the conditional linear integer arithmetic (CLIA) background theory, as a novel integration of the two approaches, combining the best of the two worlds. The technique exploits several novel divide-and-conquer strategies to split a large synthesis problem to smaller subproblems. The subproblems are solved separately and their solutions are combined to form a final solution. The technique integrates two synthesis engines: a pure deductive component that can efficiently solve some problems, and a height-based enumeration algorithm that can handle arbitrary grammar. We implemented the cooperative synthesis technique, and evaluated it on a wide range of benchmarks. Experiments showed that our technique can solve many challenging synthesis problems not possible before, and tends to be more scalable than state-of-the-art synthesis algorithms.</p>
     
 
     
@@ -448,8 +518,8 @@
 
             
             
-            <a href="/publication/#3">
-              Manuscript
+            <a href="/publication/#1">
+              Conference paper
             </a>
             
           </div>
@@ -466,7 +536,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Syntax-Guided Gradual Synthesis</div>
+          <div class="col-12 col-md-9"><em>41st ACM SIGPLAN Conference on Programming Language Design and Implementation</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -510,15 +580,10 @@
 <div class="article-container article-widget">
   <div class="post-nav">
   
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="https://YanjunW.github.io/publication/reasoning-about-recursive-tree-traversals/" rel="next">Reasoning About Recursive Tree Traversals</a>
-  </div>
-  
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="https://YanjunW.github.io/publication/decidable-dryad/" rel="prev">A Decidable Logic for Tree Data-Structures with Measurements</a>
+    <a href="https://YanjunW.github.io/publication/hotnets/" rel="prev">Learning Network Design Objectives Using A Program Synthesis Approach</a>
   </div>
   
 </div>

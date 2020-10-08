@@ -6,10 +6,28 @@
     <description>Recent content in **Yanjun Wang** on Yanjun Wang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Feb 2019 00:32:12 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://YanjunW.github.io/authors/yanjun-wang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reconciling enumerative and deductive program synthesis</title>
+      <link>https://YanjunW.github.io/publication/gradual-synthesis/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://YanjunW.github.io/publication/gradual-synthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Network Design Objectives Using A Program Synthesis Approach</title>
+      <link>https://YanjunW.github.io/publication/hotnets/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://YanjunW.github.io/publication/hotnets/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Reasoning About Recursive Tree Traversals</title>
@@ -17,15 +35,6 @@
       <pubDate>Thu, 14 Feb 2019 00:32:12 -0500</pubDate>
       
       <guid>https://YanjunW.github.io/publication/reasoning-about-recursive-tree-traversals/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax-Guided Gradual Synthesis</title>
-      <link>https://YanjunW.github.io/publication/gradual-synthesis/</link>
-      <pubDate>Wed, 13 Feb 2019 00:46:47 -0500</pubDate>
-      
-      <guid>https://YanjunW.github.io/publication/gradual-synthesis/</guid>
       <description></description>
     </item>
     
