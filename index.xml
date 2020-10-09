@@ -10,7 +10,7 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Reconciling enumerative and deductive program synthesis</title>
+      <title>[PLDI&#39;20] Reconciling enumerative and deductive program synthesis</title>
       <link>https://YanjunW.github.io/publication/gradual-synthesis/</link>
       <pubDate>Fri, 19 Jun 2020 00:00:00 -0400</pubDate>
       
@@ -19,7 +19,7 @@
     </item>
     
     <item>
-      <title>Learning Network Design Objectives Using A Program Synthesis Approach</title>
+      <title>[HotNets&#39;19] Learning Network Design Objectives Using A Program Synthesis Approach</title>
       <link>https://YanjunW.github.io/publication/hotnets/</link>
       <pubDate>Mon, 18 Nov 2019 00:00:00 -0500</pubDate>
       
@@ -58,7 +58,7 @@
     </item>
     
     <item>
-      <title>A Decidable Logic for Tree Data-Structures with Measurements</title>
+      <title>[VMCAI&#39;19] A Decidable Logic for Tree Data-Structures with Measurements</title>
       <link>https://YanjunW.github.io/publication/decidable-dryad/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
       
